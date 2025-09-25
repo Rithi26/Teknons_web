@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Teknons NIDO</title>
+  <link rel="icon" href="images/logo.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;600;700&display=swap" rel="stylesheet">
+</head>  
+<body>
+<br>
+<br><br><br>
+  <!-- Header Section -->
+  <section class="subheader">
+    <nav>
+      <a href="index.html"><img src="images/logoo.png" alt="Logo" style="height:70px;"></a>
+      <div class="nav-toggle" id="mobile-menu">
+        <i class="fas fa-bars"></i>
+      </div>
+      <div class="nav-links" id="nav-links">
+        <ul>
+          <li><a href="index.html"><i class="fas fa-home"></i> HOME</a></li>
+          <li><a href="about.html"><i class="fas fa-info-circle"></i> ABOUT</a></li>
+          <li class="dropdown">
+            <a href="course.html"><i class="fas fa-book-open"></i> COURSE</a>
+            <ul class="dropdown-content">
+              <li><a href="course.html#programs-title">Programs</a></li>
+              <li><a href="course.html#layout">Curriculum</a></li>
+            </ul>
+          </li>
+          <li><a href="gallery.html"><i class="fas fa-image"></i> GALLERY</a></li>
+          <li><a href="contact.html"><i class="fas fa-phone-alt"></i> CONTACT</a></li>
+        </ul>
+      </div>
+    </nav>
+
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-section">
+    <div class="contact-container">
+      <!-- Contact Left Column -->
+      <div class="contact-left">
+        <h2 style="text-align: center;">Let's Get Connected</h2>
+
+        <h3>WRITE</h3>
+        <p><span class="icon">✉</span> tecknonsnidopreschool@gmail.com</p>
+
+        <h3>CALL</h3>
+        <p><span class="icon">📞</span> +91 9842839440 / +91 9842839550</p>
+
+        <h3>OUR LOCATION</h3>
+        <p><span class="icon">📍</span> Bharathipuram, Tamil Nadu 641016</p>
+
+        <div class="map-container">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.4786156054906!2d77.0798677!3d11.0026718!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba857003d8fe32b%3A0xcc2372bb5a2c12de!2sTeknon's%20NIDO%20Preschool!5e0!3m2!1sen!2sin!4v1749906642865!5m2!1sen!2sin" 
+            width="100%" 
+            height="300" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+
+      <!-- Contact Right Column -->
+       <br>
+       <br>
+       <br>
+       <h2>                                  </h2>
+       <h2>   </h2>
+
+       <br>
+       
+      <div class="contact-right">
+        <form id="contactForm" action="https://formspree.io/f/mblykzvj" method="POST">
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <input type="tel" name="phone" placeholder="Your Phone Number" required pattern="[0-9]{10}" maxlength="10" minlength="10" title="Please enter a 10-digit phone number.">
+          <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+          <button type="submit">Submit</button>
+
+          <!-- Message Sent Popup -->
+          <div id="popup-success">
+            <div class="popup-box">
+              <p>Message Sent Successfully!</p>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <section class="footer">
+    <h4>About Us</h4>
+    <p>We are a preschool dedicated to providing a nurturing and stimulating environment for young children.</p>
+    <div class="icons">
+      <a href="https://www.facebook.com/teknonsnido" target="_blank" rel="noopener">
+        <i class="fab fa-facebook"></i>
+      </a>
+      <a href="https://www.instagram.com/teknonsnido?igsh=YzljYTk1ODg3Zg==" target="_blank" rel="noopener">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://www.youtube.com/@TeknonsNIDOPreschool" target="_blank" rel="noopener">
+        <i class="fab fa-youtube"></i>
+      </a>
+    </div>
+    <p>&copy; 2023 Teknons NIDO. All rights reserved.</p>
+  </section>
+
+  <!-- JavaScript -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const form = document.getElementById("contactForm");
+      const popup = document.getElementById("popup-success");
+
+      if (form) {
+        form.addEventListener("submit", function (e) {
+          e.preventDefault();
+
+
+          // Phone number validation: must be exactly 10 digits
+          const phoneInput = form.querySelector('input[name="phone"]');
+          const phoneValue = phoneInput.value.trim();
+          if (!/^\d{10}$/.test(phoneValue)) {
+            alert("Please enter a valid 10-digit phone number.");
+            phoneInput.focus();
+            return;
+          }
+
+          // Email validation: must be a valid email format
+          const emailInput = form.querySelector('input[name="email"]');
+          const emailValue = emailInput.value.trim();
+          const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+          if (!emailPattern.test(emailValue)) {
+            alert("Please enter a valid email address.");
+            emailInput.focus();
+            return;
+          }
+
+          const formData = new FormData(form);
+          const formObject = Object.fromEntries(formData.entries());
+
+          fetch(form.action, {
+            method: "POST",
+            headers: {
+              'Content-Type': 'application/json',
+              'Accept': 'application/json'
+            },
+            body: JSON.stringify(formObject)
+          }).then(response => {
+            if (response.ok) {
+              popup.style.display = "flex";
+              form.reset();
+              setTimeout(() => {
+                popup.style.display = "none";
+              }, 3000);
+            } else {
+              alert("There was an error. Please try again.");
+            }
+          }).catch(error => {
+            alert("Something went wrong.");
+            console.error(error);
+          });
+        });
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Teknons NIDO</title>
+  <link rel="icon" href="images/logo.png">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+</head>
+<body>
+  <section class="header">
+    <div class="bg-overlay"></div>
+    <nav>
+      <a href="index.html"><img src="images/logoo.png" alt="Logo" style="height:70px;" /></a>
+      <div class="nav-toggle" id="mobile-menu"><i class="fas fa-bars"></i></div>
+      <div class="nav-links" id="nav-links">
+        <ul>
+          <li><a href="index.html"><i class="fas fa-home"></i> HOME</a></li>
+          <li><a href="about.html"><i class="fas fa-info-circle"></i> ABOUT</a></li>
+          <li class="dropdown">
+            <a href="course.html"><i class="fas fa-book-open"></i> COURSE</a>
+            <ul class="dropdown-content">
+              <li><a href="course.html#programs-title">Programs</a></li>
+              <li><a href="course.html#layout">Curriculum</a></li>
+            </ul>
+          </li>
+          <li><a href="gallery.html"><i class="fas fa-image"></i> GALLERY</a></li>
+          <li><a href="contact.html"><i class="fas fa-phone-alt"></i> CONTACT</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="text-box">
+      <a href="contact.html" class="join-us-btn">Join Us</a>
+    </div>
+  </section>
+
+  <section class="homepage-about" data-aos="fade-up">
+    <div class="about-container">
+      <div class="about-text">
+        <h2>Teknons NIDO</h2>
+        <div class="underline"></div>
+        <p>
+          At Teknons NIDO, we believe every child deserves a joyful start to education.
+          Our preschool provides a warm, caring, and creative environment where children can explore, learn, and grow.
+          We focus on building confidence, independence, and social skills through play-based learning and structured discovery.
+        </p>
+        <a href="about.html" class="know-more-btn">Know More</a>
+      </div>
+      <div class="about-image">
+        <img src="images/home.jpg" alt="Classroom at Teknons NIDO" />
+      </div>
+    </div>
+  </section>
+
+  <section class="home-COURSE" data-aos="fade-up">
+    <h2>Programmes</h2>
+    <div class="home-programs-row">
+      <a href="course.html#playgroup" class="program-link">
+        <div class="home-program-box">
+          <h3>PLAYGROUP</h3>
+          <p>
+            Building early literacy and numeracy.<br>
+            Creative art, music, and movement.<br>
+            Encourages curiosity and exploration.<br>
+            Nurtures friendships and confidence.
+          </p>
+        </div>
+      </a>
+      <a href="course.html#nursery" class="program-link">
+        <div class="home-program-box">
+          <h3>NURSERY</h3>
+          <p>
+            Prepares for structured learning.<br>
+            Hands-on math and language activities.<br>
+            Develops problem-solving and teamwork.<br>
+            Inspires imagination and discovery.
+          </p>
+        </div>
+      </a>
+      <a href="course.html#junior-kg" class="program-link">
+        <div class="home-program-box">
+          <h3>JUNIOR KG</h3>
+          <p>
+            Builds foundational skills.<br>
+            Engaging lessons for growth.<br>
+            Promotes collaboration and creativity.<br>            
+            Introduction to numbers and simple math.<br>
+            Encourages independence and responsibility.<br>
+            
+          </p>
+        </div>
+      </a>
+      <a href="course.html#senior-kg" class="program-link">
+        <div class="home-program-box">
+          <h3>SENIOR KG</h3>
+          <p>
+            Readiness for primary school.<br>
+            Advanced language and math skills.<br>
+            Project-based and inquiry learning.<br>
+            Leadership and social development.<br>
+            <br>
+          </p>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <section class="testimonials" data-aos="fade-up">
+    <div class="testimonial-box">
+      <h2>What our Parents Say</h2>
+      <p>
+        We believe the best way to understand our impact is through the voices of our parents.<br>
+        Here's what they have to say about their journey with Teknons NIDO.
+      </p>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide testimonials-col"><img src="reviews/user6.png" alt="Testimonial 1" /></div>
+          <div class="swiper-slide testimonials-col"><img src="reviews/user5.png" alt="Testimonial 2" /></div>
+          <div class="swiper-slide testimonials-col"><img src="reviews/user4.png" alt="Testimonial 3" /></div>
+          <div class="swiper-slide testimonials-col"><img src="reviews/user3.png" alt="Testimonial 4" /></div>
+          <div class="swiper-slide testimonials-col"><img src="reviews/user2.png" alt="Testimonial 5" /></div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="footer">
+    <h4>About Us</h4>
+    <p>We are a preschool dedicated to providing a nurturing and stimulating environment for young children.</p>
+    <div class="icons">
+      <a href="https://www.facebook.com/teknonsnido" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.instagram.com/teknonsnido?igsh=YzljYTk1ODg3Zg==" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.youtube.com/@TeknonsNIDOPreschool" target="_blank"><i class="fab fa-youtube"></i></a>
+    </div>
+    <p>&copy; 2023 Teknons NIDO. All rights reserved.</p>
+  </section>
+
+  <!-- External Libraries -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+  <!-- AOS Initialization -->
+  <script>
+    AOS.init({
+      duration: 1000,
+      easing: 'ease-in-out',
+      once: true
+    });
+  </script>
+
+  <!-- Your Custom JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

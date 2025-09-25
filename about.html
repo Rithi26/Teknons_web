@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Teknons NIDO</title>
+  <link rel="icon" href="images/logo.png" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+  <style>
+   
+  .hexagon-features {
+    background-color: #fcefe2;
+    text-align: center;
+    padding: 60px 20px;
+    border-radius: 18px;
+    margin: 40px auto;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    width: 90%;
+  }
+
+  .hexagon-features h2 {
+    font-size: 34px;
+    color: #6a1b9a;
+    margin-bottom: 10px;
+  }
+
+  .subtext {
+    font-size: 17px;
+    color: #555;
+    margin-bottom: 40px;
+  }
+
+  .feature-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    margin-top: 40px;
+  }
+
+  .feature-box {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 30px 20px;
+    width: 445px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+  }
+
+  .feature-box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+  }
+
+  .hexagon {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 15px;
+    background-color: #fff;
+    clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+    overflow: hidden;
+    border: 2px solid #9c27b0;
+  }
+
+  .hexagon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .feature-box h3 {
+    margin: 10px 0 5px;
+    color: #6a1b9a;
+    font-size: 18px;
+  }
+
+    /* MVA Box Section */
+    .mva-section {
+      padding: 60px 20px;
+      background: #fcefe2;
+      text-align: center;
+    }
+
+    .mva-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .mva-box {
+      background: #ffffff;
+      border-radius: 16px;
+      padding: 30px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+      flex: 1 1 300px;
+      max-width: 350px;
+      transition: transform 0.3s ease;
+    }
+
+    .mva-box:hover {
+      transform: translateY(-6px);
+    }
+
+    .mva-box h3 {
+      color: #6a1b9a;
+      margin-bottom: 16px;
+      font-size: 22px;
+    }
+
+    .mva-box p,
+    .mva-box ul {
+      color: #333;
+      font-size: 15px;
+      line-height: 1.6;
+      text-align: left;
+    }
+
+    .mva-box ul {
+      padding-left: 20px;
+      list-style-type: disc;
+    }
+
+  </style>
+</head>
+<body>
+  <br><br><br>
+  <!-- Navigation -->
+  <nav>
+    <a href="index.html"><img src="images/logoo.png" alt="Logo" style="height:70px;"></a>
+    <div class="nav-toggle" id="mobile-menu">
+      <i class="fas fa-bars"></i>
+    </div>
+    <div class="nav-links" id="nav-links">
+      <ul>
+        <li><a href="index.html"><i class="fas fa-home"></i> HOME</a></li>
+        <li><a href="about.html"><i class="fas fa-info-circle"></i> ABOUT</a></li>
+        <li class="dropdown">
+          <a href="course.html"><i class="fas fa-book-open"></i> COURSE</a>
+          <ul class="dropdown-content">
+            <li><a href="course.html#programs-title">Programs</a></li>
+            <li><a href="course.html#layout">Curriculum</a></li>
+          </ul>
+        </li>
+        <li><a href="gallery.html"><i class="fas fa-image"></i> GALLERY</a></li>
+        <li><a href="contact.html"><i class="fas fa-phone-alt"></i> CONTACT</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Why Choose Us -->
+   <section class="hexagon-features" data-aos="fade-up">
+  <h2 style="text-align: center;">Why Choose Our Preschool?</h2>
+  <p class="subtext" style="text-align: center;">Here’s what makes learning special at our center!</p>
+  <div class="feature-container">
+
+    <div class="feature-box" data-aos="fade-up">
+      <div class="hexagon"><img src="images/holis.jpg" alt="Holistic Learning"></div>
+      <h3>Holistic Growth</h3>
+      <p>A balanced blend of play, academics, and life skills.</p>
+      <div class="feature-desc">Our holistic approach ensures that children grow emotionally, socially, physically, and intellectually. We believe in fostering well-rounded development through purposeful play and guided learning.</div>
+    </div>
+
+    <div class="feature-box" data-aos="fade-up" data-aos-delay="100">
+      <div class="hexagon"><img src="images/expert.jpg" alt="Expert Educators"></div>
+      <h3>Expert Educators</h3>
+      <p>Passionate teachers unlocking potential.</p>
+      <div class="feature-desc">Our educators are trained in early childhood pedagogy and bring compassion and innovation to every classroom. They personalize learning to each child's pace and passion.</div>
+    </div>
+
+    <div class="feature-box" data-aos="fade-up" data-aos-delay="200">
+      <div class="hexagon"><img src="images/safe.jpg" alt="Safe and Secure"></div>
+      <h3>Safe & Secure</h3>
+      <p>Modern, child-safe learning spaces.</p>
+      <div class="feature-desc">Safety is our top priority. From secured entryways to regular sanitization, we ensure a safe and happy environment for every child to explore freely.</div>
+    </div>
+
+    <div class="feature-box" data-aos="fade-up" data-aos-delay="300">
+      <div class="hexagon"><img src="images/holistic.jpg" alt="Creative Learning"></div>
+      <h3>Creative Learning</h3>
+      <p>Fun-filled experiences that inspire discovery.</p>
+      <div class="feature-desc">Children learn best when they’re having fun! Our curriculum integrates art, music, movement, and storytelling to encourage curiosity and imagination.</div>
+    </div>
+  </div>
+  </section><br>
+<hr>
+<br><br><br>
+  <!-- Mission, Vision, Advantages in Box Layout -->
+  <section class="mva-section">
+    <div class="mva-container">
+      <div class="mva-box" data-aos="fade-up">
+        <h3>Our Mission</h3>
+        <p>We aim to ignite the spark of lifelong learning through nurturing care and meaningful experiences. Our mission is to guide children as they grow into confident, kind, and capable individuals.</p>
+      </div>
+      <div class="mva-box" data-aos="fade-up" data-aos-delay="100">
+        <h3>Our Vision</h3>
+        <p>To be a preschool where every child feels seen, safe, and supported. Our vision is a joyful environment where curiosity is celebrated and future leaders begin their journey.</p>
+      </div>
+      <div class="mva-box" data-aos="fade-up" data-aos-delay="200">
+        <h3>Our Advantages</h3>
+        <ul>
+          <li>Personalized care & low student-teacher ratio</li>
+          <li>Hands-on, inquiry-based curriculum</li>
+          <li>Safe, colorful learning environment</li>
+          <li>Play + academics = balanced growth</li>
+          <li>Parent-teacher collaboration & feedback</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+<br><br><br><br>
+  <!-- Footer -->
+  <section class="footer">
+    <h4>About Us</h4>
+    <p>We are a preschool dedicated to nurturing children through joyful learning and compassionate care.</p>
+    <div class="icons">
+      <a href="https://www.facebook.com/teknonsnido" target="_blank" rel="noopener">
+        <i class="fab fa-facebook"></i>
+      </a>
+      <a href="https://www.instagram.com/teknonsnido?igsh=YzljYTk1ODg3Zg==" target="_blank" rel="noopener">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://www.youtube.com/@TeknonsNIDOPreschool" target="_blank" rel="noopener">
+        <i class="fab fa-youtube"></i>
+      </a>
+    </div>
+    <p>&copy; 2023 Teknons NIDO. All rights reserved.</p>
+  </section>
+
+  <!-- JS for AOS Animation -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      easing: 'ease-in-out',
+      once: true
+    });
+  </script>
+</body>
+</html>
